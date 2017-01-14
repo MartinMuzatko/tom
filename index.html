@@ -1,12 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Tom Walker's Page</title>
-    </head>
-    <body>
-        <h1>Welcome to my page!!</h1>
-        <p>I am learning how to program</p>
-        <h2>My projects</h2>
-        <ul><li>This page</li></ul>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+  <h1 id='counter'>1</h1>
+
+  <button id='dec'>-</button>
+  
+  <button id='add'>+</button>
+
+<script>
+
+var counter = 0
+var decrementButton = document.querySelector('#dec')
+var counterElement = document.querySelector('#counter')
+var incrementButton = document.querySelector('#add')
+
+decrementButton.onclick = () => {  
+  counter = counter - 1
+  counterElement.innerText = counter
+}
+
+incrementButton.onclick = () => {
+  counter = counter + 1
+  counterElement.innerText = counter
+}
+
+</script>
+</body>
 </html>
